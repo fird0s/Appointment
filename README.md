@@ -1,6 +1,6 @@
 ## Overview
 
-This is simple app that you can create your appointment. 
+This is simple appointment website.
 
 ## Technologies
 
@@ -13,9 +13,7 @@ This is simple app that you can create your appointment.
 ## How to install 
 
 1. clone this project put on your server
-2. use 'replication.sql' mysql replication
-3. login with username:admin, password:admin.
-
-
-
+2. set username, password, and database name in **application/config/database.php**
+2. import **database.sql** to your MySQL database 
+3. login with username: admin or admin@gmail.com, password: admin.
 
