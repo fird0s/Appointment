@@ -17,3 +17,7 @@ This is simple appointment website.
 3. set username, password, and database name in **application/config/database.php**
 4. import **database.sql** to your MySQL database 
 5. login with username: admin or admin@gmail.com, password: admin.
+
+## Screenshot 
+
+[![IMAGE ALT TEXT](https://i.imgur.com/WLFEszZ.png)](https://youtu.be/_rwl3zsubk4 "Watch on Youtube")
