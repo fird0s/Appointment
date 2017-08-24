@@ -24,13 +24,17 @@
 			    		type : 'POST',
 			    		data : {'<?php echo $this->security->get_csrf_token_name(); ?>':'<?php echo $this->security->get_csrf_hash(); ?>', appointment: $('#ModalAppointment').val(), date_appointment: $('#ModalDate').val()},
 			    		url : "dashboard/add/",
-			    		success: function(result){
-			    			$('#myModal').modal('toggle');
+			    		beforeSend: function( xhr ) {
 			    			var newEvent = {
 				                title: $('#ModalAppointment').val(),
 				                start: date.format('YYYY-MM-DD HH:mm:ss')
-				            };
+				            }
 			    			$('#calendar').fullCalendar('renderEvent', newEvent);
+			    		},
+			    		success: function(result){
+			    			$('#myModal').modal('toggle'); // hide modal after success insert data 
+			    			$("#ModalAppointment").val(''); // clear form
+			    			
 			    		}
 			    	})
 			    });
