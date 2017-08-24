@@ -32,8 +32,7 @@
 			    			$('#calendar').fullCalendar('renderEvent', newEvent);
 			    		},
 			    		success: function(result){
-			    			$('#myModal').modal('toggle'); // hide modal after success insert data 
-			    			$("#ModalAppointment").val(''); // clear form
+			    			location.reload();  
 			    			
 			    		}
 			    	})
@@ -63,6 +62,7 @@
 						    $('#calendar').fullCalendar('updateEvent', calEvent);
 	  					},
 			    		success: function(result){ // return from PHP server
+			    			location.reload();  
 			    		}
 			    	})
 			    });
