@@ -21,3 +21,5 @@ This is simple appointment website.
 ## Screenshot 
 
 [![IMAGE ALT TEXT](https://i.imgur.com/WLFEszZ.png)](https://youtu.be/_rwl3zsubk4 "Watch on Youtube")
+
+[Watch on Youtube](https://youtu.be/_rwl3zsubk4)
